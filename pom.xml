@@ -72,18 +72,13 @@
                                     <directory>src/main/resources/</directory>
                                     <filtering>true</filtering>
                                     <includes>
-                                        <include>**/info.properties</include>
-                                    </includes>
-                                </resource>
-                                <resource>
-                                    <directory>${basedir}</directory>
-                                    <filtering>true</filtering>
-                                    <includes>
+                                        <include>info.properties</include>
                                         <include>Dockerfile</include>
                                     </includes>
                                 </resource>
                             </resources>
-                            <outputDirectory>${project.build.directory}/</outputDirectory>
+                            <!--${project.build.directory} -->
+                            <outputDirectory>${basedir}</outputDirectory>
                         </configuration>
                     </execution>
                 </executions>

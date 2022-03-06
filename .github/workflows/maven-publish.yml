@@ -26,10 +26,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Display the path
-        run:  echo $GITHUB_WORKSPACE
       - name: Display the path ls
-        run:  echo $(ls)
+        run:  echo $(ls $GITHUB_WORKSPACE)
 
       #构建镜像
       - name: Build And Push Docker image
