@@ -25,7 +25,16 @@ jobs:
         run: mvn --batch-mode deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
+      - name: Display the path
+        run: echo pwd
+        shell: bash
+      - name: Display the path
+        run: ls
+        shell: bash
+      - name: Display the path
+        run:  echo $GITHUB_WORKSPACE
+        shell: bash
+
       #构建镜像
       - name: Build And Push Docker image
         env:
