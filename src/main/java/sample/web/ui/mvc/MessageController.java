@@ -44,6 +44,7 @@ public class MessageController {
 
 		Iterable<Message> messages = this.messageRepository.findAll();
 		return new ModelAndView("messages/list", "messages", messages);
+
 	}
 
 	@GetMapping("{id}")
