@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.wenbo.devops</groupId>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.3</version>
     <artifactId>devops-java</artifactId>
     <name>Spring Boot Web UI Sample</name>
     <description>Spring Boot Web UI Sample</description>
@@ -73,6 +73,13 @@
                                     <filtering>true</filtering>
                                     <includes>
                                         <include>**/info.properties</include>
+                                    </includes>
+                                </resource>
+                                <resource>
+                                    <directory>${basedir}</directory>
+                                    <filtering>true</filtering>
+                                    <includes>
+                                        <include>Dockerfile</include>
                                     </includes>
                                 </resource>
                             </resources>
