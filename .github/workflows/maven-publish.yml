@@ -21,3 +21,22 @@ jobs:
         run: mvn --batch-mode deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #构建镜像
+      - name: Build And Push Docker image
+        env:
+          # 指定自己的仓库地址
+          docker_repo: registry.cn-hangzhou.aliyuncs.com/hanwb
+          # 指定镜像名称
+          image_name: devops-java
+          # 指定镜像标签
+          tag: latest
+        run: | 
+          # 查看docker 版本
+          docker version
+          # 登录阿里云镜像仓库， 这里登录docker的用户名和密码在Secrets中设置，下面有介绍
+          docker login --username=${{ secrets.DOCKER_USERNAME }} --password=${{ secrets.DOCKER_PASSWORD }} registry.cn-hangzhou.aliyuncs.com
+          # 使用Dockerfile构建镜像
+          docker build . --file Dockerfile --tag $docker_repo/$image_name:$tag
+          # 推送镜像到镜像仓库
+          docker push $docker_repo/$image_name:$tag
+
