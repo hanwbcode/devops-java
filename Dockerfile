@@ -1,7 +1,7 @@
 FROM openjdk:8-jre-alpine
 WORKDIR /app
-COPY /target/kube-podbox-0.0.1.jar /app
+COPY /target/devops-java-1.0.2-SNAPSHOT.jar /app
 
 EXPOSE 8080
 ENTRYPOINT ["sh", "-c"]
-CMD ["java -jar /app/kube-podbox-0.0.1.jar"]
+CMD ["java -jar /app/devops-java-1.0.2-SNAPSHOT.jar"]
