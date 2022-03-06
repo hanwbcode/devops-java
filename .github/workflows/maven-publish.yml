@@ -4,8 +4,11 @@
 name: Maven Package
 
 on:
-  release:
-    types: [created]
+  # 这里是只有master分支发生 push 或者 pull事件时才会触发action运行
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
   build:
