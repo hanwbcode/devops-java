@@ -8,9 +8,9 @@ on:
   # Triggers the workflow on push or pull request events but only for the master branch
   # 这里是只有master分支发生 push 或者 pull事件时才会触发action运行
   push:
-    branches: [ master ]
+    branches: [ master1 ]
   pull_request:
-    branches: [ master ]
+    branches: [ master1 ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch: 
