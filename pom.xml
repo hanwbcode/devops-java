@@ -5,8 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.wenbo.devops</groupId>
-    <version>1.0.3</version>
     <artifactId>devops-java</artifactId>
+    <version>1.0.3-SNAPSHOT</version>
+
     <name>Spring Boot Web UI Sample</name>
     <description>Spring Boot Web UI Sample</description>
 
