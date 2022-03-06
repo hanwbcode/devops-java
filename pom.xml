@@ -17,6 +17,14 @@
 	<name>Spring Boot Web UI Sample</name>
 	<description>Spring Boot Web UI Sample</description>
 
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub Packages</name>
+			<url>https://maven.pkg.github.com/octocat/devops-java</url>
+		</repository>
+	</distributionManagement>
+
 	<dependencies>
 		<!-- Compile -->
 		<dependency>
