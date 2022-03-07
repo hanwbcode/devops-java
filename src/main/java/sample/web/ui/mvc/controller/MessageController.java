@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package sample.web.ui.mvc;
+package sample.web.ui.mvc.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
@@ -26,11 +26,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import sample.web.ui.Message;
-import sample.web.ui.MessageRepository;
+import sample.web.ui.mvc.model.Message;
+import sample.web.ui.mvc.repository.MessageRepository;
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/ui")
 public class MessageController {
 
 	private final MessageRepository messageRepository;

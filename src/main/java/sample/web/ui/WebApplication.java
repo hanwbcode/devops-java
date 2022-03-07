@@ -20,9 +20,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.convert.converter.Converter;
+import sample.web.ui.mvc.model.Message;
+import sample.web.ui.mvc.repository.InMemoryMessageRepository;
+import sample.web.ui.mvc.repository.MessageRepository;
 
 @SpringBootApplication
-public class SampleWebUiApplication {
+public class WebApplication {
 
 	@Bean
 	public MessageRepository messageRepository() {
@@ -40,7 +43,7 @@ public class SampleWebUiApplication {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(SampleWebUiApplication.class, args);
+		SpringApplication.run(WebApplication.class, args);
 	}
 
 }

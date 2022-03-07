@@ -1,0 +1,29 @@
+server: 
+  port: 8080
+spring: 
+  application: 
+    name: devops-java
+  thymeleaf:
+    cache: false
+  datasource: 
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/oauth2
+
+logging:
+  level: 
+    org: 
+      springframework: 
+        web: debug
+
+management:
+  endpoint: 
+    shutdown: 
+      enabled: true
+    metrics:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'

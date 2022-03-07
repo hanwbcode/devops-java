@@ -14,7 +14,9 @@
  * limitations under the License.
  */
 
-package sample.web.ui;
+package sample.web.ui.mvc.repository;
+
+import sample.web.ui.mvc.model.Message;
 
 public interface MessageRepository {
 

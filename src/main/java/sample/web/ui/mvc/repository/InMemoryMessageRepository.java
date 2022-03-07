@@ -14,7 +14,9 @@
  * limitations under the License.
  */
 
-package sample.web.ui;
+package sample.web.ui.mvc.repository;
+
+import sample.web.ui.mvc.model.Message;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
