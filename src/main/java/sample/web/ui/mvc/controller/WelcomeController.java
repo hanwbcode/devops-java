@@ -8,7 +8,7 @@ public class WelcomeController {
 
 	@RequestMapping("/")
 	public String welcome() {
-		return "Hello DevOps";
+		return "Hello DevOps!";
 	}
 
 }
