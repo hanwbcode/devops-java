@@ -2,9 +2,9 @@ name: Publish package to GitHub Packages
 on:
   # 这里是只有master分支发生 push 或者 pull事件时才会触发action运行
   push:
-    branches: [ master ]
+    branches: [ master1 ]
   pull_request:
-    branches: [ master ]
+    branches: [ master1 ]
 jobs:
   publish:
     runs-on: ubuntu-latest 
