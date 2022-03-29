@@ -15,8 +15,8 @@
     <artifactId>devops-java</artifactId>
     <version>1.0.3-SNAPSHOT</version>
 
-    <name>Spring Boot Web UI Sample</name>
-    <description>Spring Boot Web UI Sample</description>
+    <name>devops-java</name>
+    <description>Spring Boot Web Sample</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -24,7 +24,12 @@
         <java.version>1.8</java.version>
         <spring.cloud-version>2021.0.1</spring.cloud-version>
 
-        <sonar.projectKey>hanwb-code_devops-java</sonar.projectKey>
+        <sonar.host.url>https://qa-sonarqube.starboss.biz</sonar.host.url>
+        <sonar.projectKey>devops-java</sonar.projectKey>
+        <sonar.login>48a664a02681cc4d1045bc8ef85c1dca2beebcc9</sonar.login>
+        <!--<sonar.qualitygate.wait>true</sonar.qualitygate.wait>-->
+        <!--<sonar.skip>true</sonar.skip>-->
+        <!--<sonar.sources>src</sonar.sources>-->
     </properties>
 
     <dependencyManagement>
@@ -52,11 +57,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
 
         <dependency>
@@ -144,15 +144,24 @@
             </plugin>
         </plugins>
 
-<!--        <resources>-->
-<!--            <resource>-->
-<!--                <directory>src/main/resources/</directory>-->
-<!--                <filtering>true</filtering>-->
-<!--                <includes>-->
-<!--                    <include>**/*.properties</include>-->
-<!--                </includes>-->
-<!--            </resource>-->
-<!--        </resources>-->
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.sonarsource.scanner.maven</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>3.9.1.2184</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <!--        <resources>-->
+        <!--            <resource>-->
+        <!--                <directory>src/main/resources/</directory>-->
+        <!--                <filtering>true</filtering>-->
+        <!--                <includes>-->
+        <!--                    <include>**/*.properties</include>-->
+        <!--                </includes>-->
+        <!--            </resource>-->
+        <!--        </resources>-->
     </build>
 
     <profiles>

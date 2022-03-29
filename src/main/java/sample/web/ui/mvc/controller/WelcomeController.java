@@ -9,13 +9,6 @@ public class WelcomeController {
 	@RequestMapping("/")
 	public String welcome() {
 
-		Integer a = null;
-		int b = 1;
-
-		if(a == b){
-			System.out.println("a==b");
-		}
-
 		return "Hello DevOps!";
 	}
 
