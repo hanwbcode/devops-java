@@ -19,6 +19,9 @@ public class SonarQubeController {
 
 		log.info("sonarqube :{}", data);
 
+		String a = null;
+
+
 		return ImmutableMap.<String, Object>builder().put("status", "OK").build();
 	}
 

@@ -27,21 +27,6 @@ import sample.web.ui.mvc.repository.MessageRepository;
 @SpringBootApplication
 public class WebApplication {
 
-	@Bean
-	public MessageRepository messageRepository() {
-		return new InMemoryMessageRepository();
-	}
-
-	@Bean
-	public Converter<String, Message> messageConverter() {
-		return new Converter<String, Message>() {
-			@Override
-			public Message convert(String id) {
-				return messageRepository().findMessage(Long.valueOf(id));
-			}
-		};
-	}
-
 	public static void main(String[] args) {
 		SpringApplication.run(WebApplication.class, args);
 	}
