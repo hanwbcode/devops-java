@@ -15,8 +15,8 @@ public class BugController {
 	@GetMapping("/bug")
 	public String bug(@RequestParam Map<String, Object> data) {
 
-		Integer a = null;
-		String b = null;
+		Object a = 1;
+		String b = "1";
 
 		if(a == b){
 			System.out.println("aaa");
