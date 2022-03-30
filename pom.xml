@@ -26,10 +26,10 @@
 
         <sonar.host.url>https://qa-sonarqube.starboss.biz</sonar.host.url>
         <sonar.projectKey>devops-java</sonar.projectKey>
-        <sonar.login>48a664a02681cc4d1045bc8ef85c1dca2beebcc9</sonar.login>
-        <!--<sonar.qualitygate.wait>true</sonar.qualitygate.wait>-->
-        <!--<sonar.skip>true</sonar.skip>-->
-        <!--<sonar.sources>src</sonar.sources>-->
+        <sonar.login>ea77f85f1af8cf167cca765d41689835009aa2a6</sonar.login>
+        <sonar.qualitygate.wait>true</sonar.qualitygate.wait>
+        <!--<sonar.skip>true</sonar.skip>
+        <sonar.sources>src</sonar.sources>
     </properties>
 
     <dependencyManagement>
