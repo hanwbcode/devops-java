@@ -15,11 +15,17 @@ public class BugController {
 	@GetMapping("/bug")
 	public String bug(@RequestParam Map<String, Object> data) {
 
-		Object a = 1;
+		Object a = 0;
 		String b = "1";
 
 		if(a == b){
 			System.out.println("aaa");
+		}
+
+		Integer count = null;
+
+		if(count.equals(b)){
+
 		}
 
 		return "OK";

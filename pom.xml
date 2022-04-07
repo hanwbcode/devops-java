@@ -28,7 +28,7 @@
         <sonar.projectKey>devops-java</sonar.projectKey>
         <sonar.login>ea77f85f1af8cf167cca765d41689835009aa2a6</sonar.login>
         <sonar.qualitygate.wait>true</sonar.qualitygate.wait>
-        <!--<sonar.skip>true</sonar.skip>
+        <!--<sonar.skip>true</sonar.skip>-->
         <sonar.sources>src</sonar.sources>
     </properties>
 

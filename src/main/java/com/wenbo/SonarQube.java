@@ -11,12 +11,16 @@ import org.springframework.web.client.RestTemplate;
 
 public class SonarQube {
 
+	private static String a = null;
+
 	public static void main(String[] args) {
 
 		System.out.println(getMetricsResult("starpaycpmcore2.0"));
 	}
 
 	public static String getMetricsResult(String key) {
+
+		a.equals("1213");
 
 		RestTemplate restTemplate = new RestTemplate();
 
@@ -37,7 +41,7 @@ public class SonarQube {
 					requestEntity, String.class);
 			result = response.getBody();
 		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
+			//e.printStackTrace();
 		}
 		return result;
 	}
